@@ -16,8 +16,17 @@ import contact from "./modules/contact";
       hideMainContent();
       setTimeout(() => removeAllChildren(main), 300);
       setTimeout(() => showMainContent(requestedPage), 301);
+      colorCurrentLink(requestedPage);
     });
   });
+
+  function colorCurrentLink(page) {
+    links.forEach(link => {
+      if (link.dataset.page === page) link.classList.add("current");
+      else link.classList.remove("current");
+    });
+
+  }
   
   function hideMainContent() {
     main.style.opacity = "0";

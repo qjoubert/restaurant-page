@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+a.current {
+  color: #69bf64;
+}
+
 ul {
   list-style-type: none;
   margin: 2rem;
@@ -38,7 +42,7 @@ nav li {
 nav a {
   background-color: rgba(0, 0, 0, .4);
   padding: 1rem 2rem;
-  transition: background-color .4s ease;
+  transition: all .4s ease;
 }
 
 nav a:hover {
