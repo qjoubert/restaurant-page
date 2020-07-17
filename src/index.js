@@ -1,5 +1,6 @@
 import "./css/style.css";
 import about from "./modules/about";
+import menu from "./modules/menu";
 
 const main = document.querySelector("main");
 const links = document.querySelectorAll("nav a");
@@ -20,7 +21,8 @@ function removeAllChildren(element) {
 
 function showPage(page) {
   const content = 
-    page === "about" ? about : document.createElement("p");
+    page === "about" ? about : 
+    page === "menu" ? menu : document.createElement("p");
 
   main.appendChild(content);
 }

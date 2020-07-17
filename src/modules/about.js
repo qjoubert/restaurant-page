@@ -1,3 +1,4 @@
+
 export default (function() {
 
   const content = document.createElement("div");
@@ -10,7 +11,7 @@ export default (function() {
 
   function getMainHeading() {
     const h1 = document.createElement("h1");
-    h1.textContent = "Motcha Moment";
+    h1.textContent = "Matcha Moment";
     return h1;
   }
 
