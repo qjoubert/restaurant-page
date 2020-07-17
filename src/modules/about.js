@@ -4,6 +4,7 @@ export default (function() {
   const mainHeading = getMainHeading();
   const introPara = getIntroPara();
 
+  content.classList.add("content");
   content.appendChild(mainHeading);
   content.appendChild(introPara);
 
