@@ -6,6 +6,7 @@ export default (function() {
   const menuList = getMenuList();
 
   content.classList.add("content");
+  content.setAttribute("data-page", "menu");
   content.appendChild(heading);
   content.appendChild(menuList);
 

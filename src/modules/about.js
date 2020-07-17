@@ -6,6 +6,7 @@ export default (function() {
   const introPara = getIntroPara();
 
   content.classList.add("content");
+  content.setAttribute("data-page", "about");
   content.appendChild(mainHeading);
   content.appendChild(introPara);
 

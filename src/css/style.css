@@ -38,10 +38,15 @@ nav li {
 nav a {
   background-color: rgba(0, 0, 0, .4);
   padding: 1rem 2rem;
+  transition: background-color .4s ease;
 }
 
 nav a:hover {
   background-color: rgba(0, 0, 0, .6);
+}
+
+main {
+  transition: opacity .3s ease-in-out;
 }
 
 .content {

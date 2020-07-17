@@ -3,14 +3,15 @@ export default (function() {
 
   const content = document.createElement("div");
   const heading = getHeading();
-  const hoursPara = getPara("Monday to Saturday, from 8 am to 8 pm")
   const adressPara = getPara("42 Gyatso Street, Wellington");
+  const hoursPara = getPara("Monday to Saturday, from 8 am to 8 pm")
   const infoPara = getInfoPara();
 
   content.classList.add("content");
+  content.setAttribute("data-page", "contact");
   content.appendChild(heading);
-  content.appendChild(hoursPara);
   content.appendChild(adressPara);
+  content.appendChild(hoursPara);
   content.appendChild(infoPara);
 
   function getHeading() {
@@ -35,7 +36,7 @@ export default (function() {
     p.setAttribute("class", "info");
     p.textContent = "This is a fictional business created as an assignment for ";
     p.appendChild(a);
-    
+
     return p;
   }
 
