@@ -17,6 +17,8 @@ export default (function() {
 
   function getMenuList() {
     const ul = document.createElement("ul");
+    ul.classList.add("drinks");
+
     const drinks = [
       "matcha tea",
       "matcha iced tea",
