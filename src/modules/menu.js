@@ -12,7 +12,7 @@ export default (function() {
 
   function getHeading() {
     const h2 = document.createElement("h2");
-    h2.textContent = "Menu";
+    h2.textContent = "Our matcha drinks";
     return h2;
   }
 
