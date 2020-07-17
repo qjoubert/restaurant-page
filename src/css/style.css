@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  font-family: sacramento;
+  font-family: sacramento, cursive;
   font-size: 3rem;
   margin: 0;
 }
@@ -63,5 +63,11 @@ ul.drinks li {
   margin-bottom: .3rem;
 }
 
+p.info {
+  font-family: arial, sans-serif;
+  font-size: 1.4rem;
+}
 
-
+p.info a {
+  text-decoration: underline;
+}

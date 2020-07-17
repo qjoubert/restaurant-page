@@ -26,14 +26,16 @@ export default (function() {
   }
 
   function getInfoPara() {
-    const p = document.createElement("p");
     const a = document.createElement("a");
     a.setAttribute("href", "https://www.theodinproject.com/");
     a.setAttribute("target", "_blank");
     a.textContent = "The Odin Project";
-
+    
+    const p = document.createElement("p");
+    p.setAttribute("class", "info");
     p.textContent = "This is a fictional business created as an assignment for ";
     p.appendChild(a);
+    
     return p;
   }
 
