@@ -45,7 +45,7 @@ nav a {
   transition: all .4s ease;
 }
 
-nav a:hover {
+nav a:not(.current):hover {
   background-color: rgba(0, 0, 0, .6);
 }
 
